@@ -18,7 +18,8 @@ const ApplicationSchema = new mongoose.Schema(
 
 // Create or reuse the model
 const Application =
-  mongoose.models.Application || mongoose.model("Application", ApplicationSchema);
+  mongoose.models.Application ||
+  mongoose.model("Application", ApplicationSchema);
 
 export async function POST(req: Request) {
   try {
