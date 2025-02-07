@@ -1,48 +1,60 @@
-"use client"
+"use client";
 
-import { useState } from "react"
-import { useRouter } from "next/navigation"
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { toast } from "@/hooks/use-toast"
+import { useState } from "react";
+import { useRouter } from "next/navigation";
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { toast } from "@/hooks/use-toast";
 
 export default function ApplyPage() {
-  const router = useRouter()
-  const [isLoading, setIsLoading] = useState(false)
+  const router = useRouter();
+  const [isLoading, setIsLoading] = useState(false);
 
   async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
-    event.preventDefault()
-    setIsLoading(true)
+    event.preventDefault();
+    setIsLoading(true);
 
-    const formData = new FormData(event.currentTarget)
-    const response = await fetch("/api/apply", {
-      method: "POST",
-      body: formData,
-    })
+    // Convert form data to JSON
+    const formData = new FormData(event.currentTarget);
+    const data = Object.fromEntries(formData.entries());
 
-    setIsLoading(false)
+    try {
+      const response = await fetch("/api/apply", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+console.log(response)
+      if (!response.ok) {
+        throw new Error("Failed to submit application");
+      }
 
-    if (!response?.ok) {
-      return toast({
+      toast({
+        title: "Application submitted!",
+        description: "We'll be in touch soon.",
+      });
+
+      router.push("/");
+    } catch (error) {
+      toast({
         title: "Something went wrong.",
         description: "Your application was not submitted. Please try again.",
         variant: "destructive",
-      })
+      });
+    } finally {
+      setIsLoading(false);
     }
-
-    toast({
-      title: "Application submitted!",
-      description: "We'll be in touch soon.",
-    })
-
-    router.push("/")
   }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">Apply for Investment</h1>
+        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+          Apply for Investment
+        </h1>
         <form onSubmit={onSubmit} className="max-w-2xl mx-auto space-y-6">
           <div>
             <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
@@ -92,6 +104,5 @@ export default function ApplyPage() {
         </form>
       </div>
     </div>
-  )
+  );
 }
-
