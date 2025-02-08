@@ -60,7 +60,7 @@ export default function BenefitsPage() {
           <Card>
             <CardContent className="p-6">
               <p className="text-lg mb-4">
-                At Global Investor Network, we're not just investors – we're your partners in growth. Our commitment
+                At Global Investor Network, we&#39;re not just investors – we&#39;re your partners in growth. Our commitment
                 goes beyond financial support. We provide:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-600">

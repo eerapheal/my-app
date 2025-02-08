@@ -1,5 +1,4 @@
 import React from 'react'
-import Image from "next/image"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
@@ -62,7 +61,7 @@ const Home = () => {
       <section className="py-20 px-4 bg-blue-600 text-white text-center">
         <h2 className="text-3xl font-semibold mb-6">Ready to Turn Your Idea into Reality?</h2>
         <p className="text-xl mb-8 max-w-2xl mx-auto">
-          We're excited to hear about your business idea or growth plans. Apply now and let's create something amazing
+          We&#39;re excited to hear about your business idea or growth plans. Apply now and let&#39;s create something amazing
           together.
         </p>
         <Button size="lg" variant="secondary" className="bg-white text-blue-600 hover:bg-gray-100" asChild>
