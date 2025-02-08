@@ -37,7 +37,7 @@ export default function ApplicationsPage() {
 
         const data = await response.json();
         setApplications(data.data);
-      } catch (error) {
+      } catch {
         setError("Error fetching applications");
       } finally {
         setLoading(false);

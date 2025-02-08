@@ -37,7 +37,7 @@ export default function ApplyPage() {
       });
 
       router.push("/");
-    } catch (error) {
+    } catch {
       toast({
         title: "Something went wrong.",
         description: "Your application was not submitted. Please try again.",
