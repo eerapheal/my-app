@@ -53,7 +53,7 @@ export function Header() {
                   Logout
                 </Button>
               ) : (
-                <Button variant="outline" className="w-full text-xl font-bold p-5" asChild>
+                <Button className="w-full text-xl font-bold p-5" asChild>
                   <Link href="/apply">Apply Now</Link>
                 </Button>
               )}

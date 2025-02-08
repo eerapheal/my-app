@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { CheckCircle, Users, TrendingUp, PiggyBank, BarChart } from "lucide-react"
+import Link from "next/link"
 
 export default function HowItWorksPage() {
   return (
@@ -111,7 +112,7 @@ export default function HowItWorksPage() {
 
         <div className="text-center">
           <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-            Apply for Investment
+            <Link href="/apply"> Apply for Investment</Link>
           </Button>
         </div>
       </main>
