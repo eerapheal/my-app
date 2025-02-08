@@ -7,15 +7,15 @@ const Footer = () => {
 
   return (
     <div>
-      <div className="py-8 px-4 bg-gray-800 text-white text-center">
+      <div className="py-8 px-4 bg-gray-800 font-semibold text-white text-center">
         <p>&copy; {currentYear} Global Network For Investors. All rights reserved.</p>
         <p className="mt-2">
           Contact us:{" "}
-          <a href={`mailto:${email}`} className="text-blue-400 hover:underline">
+          <a href={`mailto:${email}`} className="text-blue-400 font-semibold hover:underline">
             {email}
           </a>{" "}
-          |{" "}
-          <a href={`tel:${phone}`} className="text-blue-400 hover:underline">
+          <br />
+          <a href={`tel:${phone}`} className="text-blue-400 font-semibold hover:underline">
             {phone}
           </a>
         </p>

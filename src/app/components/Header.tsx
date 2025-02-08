@@ -24,7 +24,7 @@ export function Header() {
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-600 focus:outline-none">
-              {menuOpen ? <X size={28} /> : <Menu size={28} />}
+              {menuOpen ? <X size={48} /> : <Menu size={48} />}
             </button>
           </div>
 
