@@ -30,7 +30,7 @@ export function Header() {
 
           {/* Mobile Menu */}
           {menuOpen && (
-            <nav className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center h-screen space-y-4 p-4 pt-10 z-50  text-blue-600">
+            <nav className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center h-full space-y-4 p-4 pt-10 z-50  text-blue-600">
               <Link href="/" className="text-xl font-bold  hover:text-gray-900">
                 Home
               </Link>
