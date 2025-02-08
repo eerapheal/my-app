@@ -1,7 +1,12 @@
-import Link from "next/link"
-import { Button } from "@/components/ui/button"
+"use client";
+
+import Link from "next/link";
+import { Button } from "@/components/ui/button";
+import { useSession, signOut } from "next-auth/react";
 
 export function Header() {
+  const { data: session, status } = useSession();
+
   return (
     <header className="bg-white shadow-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -11,6 +16,7 @@ export function Header() {
               Global Investor Network
             </Link>
           </div>
+
           <nav className="hidden md:flex space-x-10">
             <Link href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
               Home
@@ -28,14 +34,22 @@ export function Header() {
               Success Stories
             </Link>
           </nav>
+
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
-            <Button variant="outline" className="ml-8 whitespace-nowrap" asChild>
-              <Link href="/apply">Apply Now</Link>
-            </Button>
+            {status === "loading" ? (
+              <p className="text-gray-500">Checking...</p>
+            ) : session ? (
+              <Button variant="outline" className="ml-8" onClick={() => signOut()}>
+                Logout
+              </Button>
+            ) : (
+              <Button variant="outline" className="ml-8" asChild>
+                <Link href="/apply">Apply Now</Link>
+              </Button>
+            )}
           </div>
         </div>
       </div>
     </header>
-  )
+  );
 }
-
