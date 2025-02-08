@@ -24,7 +24,7 @@ const Home = () => {
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold mb-4">About Us</h2>
                 <p className="text-gray-600 mb-4">
-                  Learn about our mission, values, and the team behind Global Investor Network.
+                  Learn about our mission, values, and the team behind Global Network For  Investors.
                 </p>
                 <Link href="/about" className="text-blue-600 hover:text-blue-800 flex items-center">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />

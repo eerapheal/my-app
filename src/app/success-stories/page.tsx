@@ -17,7 +17,7 @@ export default function SuccessStoriesPage() {
                 story:
                   "Sarah's innovative recycling technology caught our attention. With our investment and guidance, EcoTech Solutions expanded from a local operation to a global leader in sustainable waste management within just 3 years.",
                 quote:
-                  "The support from Global Investor Network was instrumental in scaling our business. Their guidance helped us navigate challenges and seize opportunities we hadn't even considered.",
+                  "The support from Global Network For  Investors was instrumental in scaling our business. Their guidance helped us navigate challenges and seize opportunities we hadn't even considered.",
               },
               {
                 name: "Carlos Rodriguez",
@@ -25,7 +25,7 @@ export default function SuccessStoriesPage() {
                 story:
                   "Carlos had a vision for telemedicine in underserved areas. We provided the capital and connections needed to turn HealthConnect into a platform that now serves millions across South America.",
                 quote:
-                  "Global Investor Network didn't just provide funds; they opened doors. Their network and strategic advice were game-changers for HealthConnect.",
+                  "Global Network For  Investors didn't just provide funds; they opened doors. Their network and strategic advice were game-changers for HealthConnect.",
               },
               {
                 name: "Aisha Patel",
@@ -33,7 +33,7 @@ export default function SuccessStoriesPage() {
                 story:
                   "Aisha's meal-kit delivery service started in her kitchen. Our investment helped FoodFusion expand its operations, improve logistics, and become a household name in the UK and beyond.",
                 quote:
-                  "The team at Global Investor Network believed in my vision when others didn't. Their support allowed me to scale FoodFusion without compromising on quality or our core values.",
+                  "The team at Global Network For  Investors believed in my vision when others didn't. Their support allowed me to scale FoodFusion without compromising on quality or our core values.",
               },
               {
                 name: "Tom Andersson",
@@ -41,7 +41,7 @@ export default function SuccessStoriesPage() {
                 story:
                   "Tom's electric bike-sharing startup needed capital to expand. We saw the potential and invested. Today, GreenRide operates in over 50 cities across Europe, promoting sustainable urban transport.",
                 quote:
-                  "The mentorship and global perspective provided by Global Investor Network were invaluable. They helped us think big and execute effectively.",
+                  "The mentorship and global perspective provided by Global Network For  Investors were invaluable. They helped us think big and execute effectively.",
               },
             ].map((story, index) => (
               <Card key={index} className="flex flex-col">

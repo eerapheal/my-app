@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { useSession, signOut } from "next-auth/react";
 import { Menu, X } from "lucide-react";
+import Image from "next/image";
 
 export function Header() {
   const { data: session, status } = useSession();
@@ -16,7 +17,7 @@ export function Header() {
         <div className="flex justify-between items-center py-4 md:justify-start md:space-x-10">
           <div className="flex justify-start lg:w-0 lg:flex-1">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              Global Investor Network
+              <Image alt="logo" src="/gnfi.png" width={80} height={60} />
             </Link>
           </div>
 

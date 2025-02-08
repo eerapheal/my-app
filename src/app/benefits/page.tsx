@@ -8,7 +8,7 @@ export default function BenefitsPage() {
         <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">Benefits for Entrepreneurs</h1>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Why Choose Global Investor Network?</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Why Choose Global Network For  Investors?</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
@@ -60,7 +60,7 @@ export default function BenefitsPage() {
           <Card>
             <CardContent className="p-6">
               <p className="text-lg mb-4">
-                At Global Investor Network, we&#39;re not just investors – we&#39;re your partners in growth. Our commitment
+                At Global Network For  Investors, we&#39;re not just investors – we&#39;re your partners in growth. Our commitment
                 goes beyond financial support. We provide:
               </p>
               <ul className="list-disc pl-6 space-y-2 text-gray-600">

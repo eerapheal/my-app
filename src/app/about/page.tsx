@@ -5,14 +5,14 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e6d1ea] to-pink-100 py-12">
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">About Global Investor Network</h1>
+        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">About Global Network For  Investors</h1>
 
         <section className="mb-16">
           <h2 className="text-2xl font-semibold mb-6 text-gray-800">Our Mission</h2>
           <Card>
             <CardContent className="p-6">
               <p className="text-xl text-[#8a50df] text-center mb-4 font-semibold">
-                At Global Investor Network, we believe in the power of great ideas and the people behind them.
+                At Global Network For  Investors, we believe in the power of great ideas and the people behind them.
                 Our mission is to empower visionary entrepreneurs worldwide, helping them turn their dreams into successful businesses.
                 We provide the necessary funding, resources, and mentorship to support long-term growth and sustainability.
                 Unlike traditional investment models, we prioritize the success of our partners by ensuring they have ample time to establish and scale their businesses.
