@@ -49,50 +49,50 @@ export default function ApplyPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white py-12">
+    <div className="min-h-screen bg-gradient-to-b from-[#e6d1ea] to-pink-100 py-12">
       <div className="container mx-auto px-4">
         <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
           Apply for Investment
         </h1>
         <form onSubmit={onSubmit} className="max-w-2xl mx-auto space-y-6">
           <div>
-            <label htmlFor="fullName" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="fullName" className="block text-lg font-medium text-gray-700">
               Full Name
             </label>
             <Input id="fullName" name="fullName" required />
           </div>
           <div>
-            <label htmlFor="address" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="address" className="block text-lg font-medium text-gray-700">
               Address
             </label>
             <Input id="address" name="address" required />
           </div>
           <div>
-            <label htmlFor="email" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="email" className="block text-lg font-medium text-gray-700">
               Email
             </label>
             <Input id="email" name="email" type="email" required />
           </div>
           <div>
-            <label htmlFor="phone" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="phone" className="block text-lg font-medium text-gray-700">
               Phone Number
             </label>
             <Input id="phone" name="phone" type="tel" required />
           </div>
           <div>
-            <label htmlFor="occupation" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="occupation" className="block text-lg font-medium text-gray-700">
               Occupation
             </label>
             <Input id="occupation" name="occupation" required />
           </div>
           <div>
-            <label htmlFor="expectedAmount" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="expectedAmount" className="block text-lg font-medium text-gray-700">
               Expected Investment Amount
             </label>
             <Input id="expectedAmount" name="expectedAmount" type="number" required />
           </div>
           <div>
-            <label htmlFor="businessIdea" className="block text-sm font-medium text-gray-700">
+            <label htmlFor="businessIdea" className="block text-lg font-medium text-gray-700">
               Tell us about your business or idea
             </label>
             <Textarea id="businessIdea" name="businessIdea" rows={5} required />
