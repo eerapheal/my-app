@@ -1,6 +1,8 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { useSession } from "next-auth/react";
+import { useRouter } from "next/navigation";
 
 interface Application {
   _id: string;
@@ -14,11 +16,20 @@ interface Application {
 }
 
 export default function ApplicationsPage() {
+  const { data: session, status } = useSession();
+  const router = useRouter();
   const [applications, setApplications] = useState<Application[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
+    if (status === "loading") return;
+    if (!session) router.push("/");
+  }, [session, status, router]);
+
+  useEffect(() => {
+    if (!session) return;
+
     async function fetchApplications() {
       try {
         const response = await fetch("/api/applications");
@@ -34,7 +45,9 @@ export default function ApplicationsPage() {
     }
 
     fetchApplications();
-  }, []);
+  }, [session]);
+
+  if (status === "loading") return <p>Loading...</p>;
 
   return (
     <div className="container mx-auto p-4">
