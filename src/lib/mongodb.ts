@@ -1,26 +1,24 @@
-import { MongoClient } from "mongodb";
+import mongoose from "mongoose";
 
-const MONGODB_URI = process.env.MONGODB_URI as string;
+const MONGODB_URI = process.env.MONGODB_URI || "";
 
 if (!MONGODB_URI) {
-  throw new Error("Please define the MONGODB_URI environment variable.");
+  throw new Error("MONGODB_URI is not defined in environment variables");
 }
 
-let cachedClient: MongoClient | null = null;
-
-export async function dbConnect() {
-  if (cachedClient) {
-    return cachedClient;
+export const dbConnect = async () => {
+  if (mongoose.connection.readyState >= 1) {
+    console.log("Already connected to MongoDB");
+    return;
   }
 
   try {
-    const client = new MongoClient(MONGODB_URI);
-    await client.connect();
-    cachedClient = client;
+    await mongoose.connect(MONGODB_URI, {
+      dbName: "invest", // Replace with your actual database name
+    });
     console.log("Connected to MongoDB");
-    return client;
   } catch (error) {
     console.error("Error connecting to MongoDB:", error);
-    throw new Error("Failed to connect to the database");
+    throw new Error("Database connection failed");
   }
-}
+};
