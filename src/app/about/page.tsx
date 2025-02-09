@@ -11,7 +11,7 @@ export default function AboutPage() {
           <h2 className="text-2xl font-semibold mb-6 text-gray-800">Our Mission</h2>
           <Card>
             <CardContent className="p-6">
-              <p className="text-xl text-[#8a50df] text-center mb-4 font-semibold">
+              <p className="text-sm md:text-xl text-[#8a50df] text-center mb-4 font-semibold">
                 At Global Network For  Investors, we believe in the power of great ideas and the people behind them.
                 Our mission is to empower visionary entrepreneurs worldwide, helping them turn their dreams into successful businesses.
                 We provide the necessary funding, resources, and mentorship to support long-term growth and sustainability.
@@ -74,17 +74,17 @@ export default function AboutPage() {
           <div className="grid gap-8 md:grid-cols-3">
             {[
               {
-                name: "John Doe",
+                name: "Wilson Felix",
                 position: "Founder & CEO",
-                bio: "With over 20 years of experience in venture capital and entrepreneurship, John leads our global investment strategy.",
+                bio: "With over 20 years of experience in venture capital and entrepreneurship, Wilson leads our global investment strategy.",
               },
               {
-                name: "Jane Smith",
+                name: "Jane Alfred",
                 position: "Chief Investment Officer",
                 bio: "Jane brings her expertise in financial analysis and market trends to identify high-potential investment opportunities.",
               },
               {
-                name: "Mike Johnson",
+                name: "Mike Alexander",
                 position: "Head of Entrepreneur Relations",
                 bio: "Mike works closely with our portfolio companies, providing mentorship and strategic guidance for their growth.",
               },
