@@ -6,12 +6,16 @@ import { ArrowRight } from "lucide-react"
 const Home = () => {
   return (
     <div>
-      <section className="pt-32 pb-20 px-4 text-center">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-gray-800">Empowering Global Entrepreneurs</h1>
-        <p className="text-xl mb-8 text-gray-600 max-w-2xl mx-auto">
+      <section className="pt-28 pb-20 px-4 text-center">
+        <h1 className="text-4xl md:text-6xl font-bold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">
+          Empowering Global Entrepreneurs
+        </h1>
+
+        <p className="text-2xl mb-8  font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 max-w-2xl mx-auto">
           We invest in people with great ideas and businesses around the world.
         </p>
-        <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white" asChild>
+
+        <Button size="lg" className="bg-blue-600 text-xl font-bold hover:bg-blue-700  text-white" asChild>
           <Link href="/how-it-works">Learn How It Works</Link>
         </Button>
       </section>
@@ -56,7 +60,15 @@ const Home = () => {
           </div>
         </div>
       </section>
-
+      <div className="m-10 flex items-center justify-center">
+        <video
+          controls
+          className="w-[600] h-[300] rounded-md shadow-lg"
+        >
+          <source src="/videos/videoplayback.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       {/* Call to Action */}
       <section className="py-20 px-4 bg-blue-600 text-white text-center">
         <h2 className="text-3xl font-semibold mb-6">Ready to Turn Your Idea into Reality?</h2>

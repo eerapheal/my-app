@@ -22,7 +22,7 @@ export default function SuccessStoriesPage() {
                   "Sarah&#39;s innovative recycling technology caught our attention. With our investment and guidance, EcoTech Solutions expanded from a local operation to a global leader in sustainable waste management within just 3 years.",
                 quote:
                   "The support from Global Network For Investors was instrumental in scaling our business. Their guidance helped us navigate challenges and seize opportunities we hadn&#39;t even considered.",
-                videoUrl: "/videos/sarahjohnson.mp4", // Example video path
+                videoUrl: "/videos/sarahjohnson.mp4",
               },
               {
                 name: "Carlos Rodriguez",
