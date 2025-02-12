@@ -7,10 +7,10 @@ export default function HowItWorksPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e6d1ea] to-pink-100 py-12">
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">How It Works</h1>
+        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">How It Works</h1>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Our Investment Process</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Our Investment Process</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
             {[
               {
@@ -39,7 +39,7 @@ export default function HowItWorksPage() {
                   <div className="flex justify-center mb-4">
                     <step.icon className="w-12 h-12 text-blue-600" />
                   </div>
-                  <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500">{step.title}</h3>
                   <p className="text-gray-600">{step.description}</p>
                 </CardContent>
               </Card>
@@ -48,13 +48,13 @@ export default function HowItWorksPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Profit Sharing Model</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Profit Sharing Model</h2>
           <Card>
             <CardContent className="p-6">
               <div className="flex items-center justify-center mb-6">
                 <BarChart className="w-16 h-16 text-blue-600" />
               </div>
-              <p className="text-lg text-center mb-4">
+              <p className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500 text-center mb-4">
                 After 3 years of setup and operation, we implement our unique profit-sharing model:
               </p>
               <div className="grid md:grid-cols-2 gap-4 text-center">
@@ -76,7 +76,7 @@ export default function HowItWorksPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Frequently Asked Questions</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-gray-800 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Frequently Asked Questions</h2>
           <div className="space-y-4">
             {[
               {
@@ -102,7 +102,7 @@ export default function HowItWorksPage() {
             ].map((faq, index) => (
               <Card key={index}>
                 <CardContent className="p-6">
-                  <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+                  <h3 className="text-lg text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500 font-semibold mb-2">{faq.question}</h3>
                   <p className="text-gray-600">{faq.answer}</p>
                 </CardContent>
               </Card>
@@ -111,7 +111,7 @@ export default function HowItWorksPage() {
         </section>
 
         <div className="text-center">
-          <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
+          <Button size="lg" className="bg-blue-600 font-semibold text-xl hover:bg-blue-700 text-white">
             <Link href="/apply"> Apply for Investment</Link>
           </Button>
         </div>

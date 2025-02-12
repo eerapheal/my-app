@@ -5,10 +5,10 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e6d1ea] to-pink-100 py-12">
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">About Global Network For  Investors</h1>
+        <h1 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">About Global Network For  Investors</h1>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Our Mission</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Our Mission</h2>
           <Card>
             <CardContent className="p-6">
               <p className="text-sm md:text-xl text-[#8a50df] text-center mb-4 font-semibold">
@@ -27,7 +27,7 @@ export default function AboutPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Our Values</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Our Values</h2>
           <div className="grid gap-8 md:grid-cols-2">
             {[
               {
@@ -59,7 +59,7 @@ export default function AboutPage() {
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <value.icon className="w-8 h-8 text-blue-600 mr-4" />
-                    <h3 className="text-xl font-semibold">{value.title}</h3>
+                    <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">{value.title}</h3>
                   </div>
                   <p className="text-gray-600">{value.description}</p>
                 </CardContent>
@@ -70,7 +70,7 @@ export default function AboutPage() {
 
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Our Team</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Our Team</h2>
           <div className="grid gap-8 md:grid-cols-3">
             {[
               {
@@ -91,7 +91,7 @@ export default function AboutPage() {
             ].map((member, index) => (
               <Card key={index}>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
+                  <h3 className="text-xl text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500 font-semibold mb-2">{member.name}</h3>
                   <p className="text-blue-600 mb-4">{member.position}</p>
                   <p className="text-gray-600">{member.bio}</p>
                 </CardContent>

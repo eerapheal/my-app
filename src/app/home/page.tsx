@@ -11,7 +11,7 @@ const Home = () => {
           Empowering Global Entrepreneurs
         </h1>
 
-        <p className="text-2xl mb-8  font-medium text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-yellow-500 max-w-2xl mx-auto">
+        <p className="text-2xl mb-8  font-medium max-w-3xl mx-auto">
           We invest in people with great ideas and businesses around the world.
         </p>
 
@@ -26,7 +26,7 @@ const Home = () => {
           <div className="grid gap-8 md:grid-cols-3">
             <Card>
               <CardContent className="p-6">
-                <h2 className="text-2xl font-semibold mb-4">About Us</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">About Us</h2>
                 <p className="text-gray-600 mb-4">
                   Learn about our mission, values, and the team behind Global Network For  Investors.
                 </p>
@@ -37,7 +37,7 @@ const Home = () => {
             </Card>
             <Card>
               <CardContent className="p-6">
-                <h2 className="text-2xl font-semibold mb-4">Benefits</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Benefits</h2>
                 <p className="text-gray-600 mb-4">
                   Discover the advantages of partnering with us for your business growth.
                 </p>
@@ -48,7 +48,7 @@ const Home = () => {
             </Card>
             <Card>
               <CardContent className="p-6">
-                <h2 className="text-2xl font-semibold mb-4">Success Stories</h2>
+                <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Success Stories</h2>
                 <p className="text-gray-600 mb-4">
                   Read about entrepreneurs who have thrived with our support and investment.
                 </p>

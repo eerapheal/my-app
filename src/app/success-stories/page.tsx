@@ -5,12 +5,12 @@ export default function SuccessStoriesPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e6d1ea] to-pink-100 py-12">
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">
+        <h1 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">
           Success Stories
         </h1>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">
             Entrepreneurs Who Thrived with Our Support
           </h2>
           <div className="grid gap-8 md:grid-cols-2">
@@ -54,7 +54,7 @@ export default function SuccessStoriesPage() {
             ].map((story, index) => (
               <Card key={index} className="flex flex-col">
                 <CardContent className="p-6 flex-grow">
-                  <h3 className="text-xl font-semibold mb-2">{story.name}</h3>
+                  <h3 className="text-xl font-semibold mb-2 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500">{story.name}</h3>
                   <p className="text-blue-600 mb-4">{story.company}</p>
                   <p className="text-gray-600 mb-4">{story.story}</p>
                   <div className="flex items-start mt-4">
@@ -79,7 +79,7 @@ export default function SuccessStoriesPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">
             Join Our Success Stories
           </h2>
           <Card>

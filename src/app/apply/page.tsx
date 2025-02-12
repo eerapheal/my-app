@@ -51,7 +51,7 @@ export default function ApplyPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e6d1ea] to-pink-100 py-12">
       <div className="container mx-auto px-4">
-        <h1 className="text-4xl font-bold text-center mb-8 text-gray-800">
+        <h1 className="text-4xl font-bold text-center mb-8 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">
           Apply for Investment
         </h1>
         <form onSubmit={onSubmit} className="max-w-2xl mx-auto space-y-6">
@@ -97,7 +97,7 @@ export default function ApplyPage() {
             </label>
             <Textarea id="businessIdea" name="businessIdea" rows={5} required />
           </div>
-          <Button type="submit" className="w-full" disabled={isLoading}>
+          <Button type="submit" className="w-full text-lg font-medium md:text-xl md:font-semibold" disabled={isLoading}>
             {isLoading ? "Submitting..." : "Apply Now"}
           </Button>
         </form>

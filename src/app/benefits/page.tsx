@@ -5,10 +5,10 @@ export default function BenefitsPage() {
   return (
     <div className="min-h-screen bg-gradient-to-b from-[#e6d1ea] to-pink-100 py-12">
       <main className="container mx-auto px-4 py-16">
-        <h1 className="text-4xl font-bold text-center mb-12 text-gray-800">Benefits for Entrepreneurs</h1>
+        <h1 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Benefits for Entrepreneurs</h1>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Why Choose Global Network For  Investors?</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Why Choose Global Network For  Investors?</h2>
           <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
             {[
               {
@@ -46,7 +46,7 @@ export default function BenefitsPage() {
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
                     <benefit.icon className="w-8 h-8 text-blue-600 mr-4" />
-                    <h3 className="text-xl font-semibold">{benefit.title}</h3>
+                    <h3 className="text-xl font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500">{benefit.title}</h3>
                   </div>
                   <p className="text-gray-600">{benefit.description}</p>
                 </CardContent>
@@ -56,10 +56,10 @@ export default function BenefitsPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Our Commitment to Your Success</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Our Commitment to Your Success</h2>
           <Card>
             <CardContent className="p-6">
-              <p className="text-lg mb-4">
+              <p className="text-lg mb-4 text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500">
                 At Global Network For  Investors, we&#39;re not just investors – we&#39;re your partners in growth. Our commitment
                 goes beyond financial support. We provide:
               </p>
@@ -75,7 +75,7 @@ export default function BenefitsPage() {
         </section>
 
         <section>
-          <h2 className="text-2xl font-semibold mb-6 text-gray-800">Ready to Grow with Us?</h2>
+          <h2 className="text-2xl font-semibold mb-6 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Ready to Grow with Us?</h2>
           <Card>
             <CardContent className="p-6 text-center">
               <p className="text-lg mb-4">

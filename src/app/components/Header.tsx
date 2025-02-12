@@ -31,19 +31,19 @@ export function Header() {
           {/* Mobile Menu */}
           {menuOpen && (
             <nav className="md:hidden absolute top-16 left-0 w-full bg-white shadow-md flex flex-col items-center h-full space-y-4 p-4 pt-10 z-50  text-blue-600">
-              <Link href="/" className="text-xl font-bold  hover:text-gray-900">
+              <Link href="/" onClick={() => setMenuOpen(false)} className="text-xl font-bold  hover:text-gray-900">
                 Home
               </Link>
-              <Link href="/about" className="text-xl font-bold  hover:text-gray-900">
+              <Link href="/about" onClick={() => setMenuOpen(false)} className="text-xl font-bold  hover:text-gray-900">
                 About
               </Link>
-              <Link href="/how-it-works" className="text-xl font-bold  hover:text-gray-900">
+              <Link href="/how-it-works" onClick={() => setMenuOpen(false)} className="text-xl font-bold  hover:text-gray-900">
                 How It Works
               </Link>
-              <Link href="/benefits" className="text-xl font-bold  hover:text-gray-900">
+              <Link href="/benefits" onClick={() => setMenuOpen(false)} className="text-xl font-bold  hover:text-gray-900">
                 Benefits
               </Link>
-              <Link href="/success-stories" className="text-xl font-bold  hover:text-gray-900">
+              <Link href="/success-stories" onClick={() => setMenuOpen(false)} className="text-xl font-bold  hover:text-gray-900">
                 Success Stories
               </Link>
               {status === "loading" ? (
