@@ -11,7 +11,7 @@ const Home = () => {
           Empowering Global Entrepreneurs
         </h1>
 
-        <p className="text-2xl mb-8  font-medium max-w-3xl mx-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500">
+        <p className="text-2xl mb-8 font-medium md:font-semibold max-w-xl mx-auto text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-orange-500 to-pink-500">
           We invest in people with great ideas and businesses around the world.
         </p>
 
