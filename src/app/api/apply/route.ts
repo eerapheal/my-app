@@ -1,25 +1,6 @@
 import { NextResponse } from "next/server";
-import mongoose from "mongoose";
 import { dbConnect } from "@/lib/mongodb";
-
-// Define the schema
-const ApplicationSchema = new mongoose.Schema(
-  {
-    fullName: String,
-    address: String,
-    email: String,
-    phone: String,
-    occupation: String,
-    expectedAmount: Number,
-    businessIdea: String,
-  },
-  { timestamps: true }
-);
-
-// Create or reuse the model
-const Application =
-  mongoose.models.Application ||
-  mongoose.model("Application", ApplicationSchema);
+import { Application } from "../model/route";
 
 export async function POST(req: Request) {
   try {
@@ -27,7 +8,7 @@ export async function POST(req: Request) {
     await dbConnect();
 
     // Parse the form data
-    const formData = await req.json(); // Use `req.json()` instead of `req.formData()`
+    const formData = await req.json();
 
     // Create a new application object
     const application = {
