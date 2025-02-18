@@ -28,7 +28,7 @@ const Home = () => {
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">About Us</h2>
                 <p className="text-gray-600 mb-4">
-                  Learn about our mission, values, and the team behind Global Network For  Investors.
+                  Learn about our mission, values, and the team behind Global Network For Investors. We are dedicated to empowering businesses and individuals by providing innovative solutions, strategic investments, and a global network of opportunities. Our goal is to foster growth, sustainability, and success for all our partners.
                 </p>
                 <Link href="/about" className="text-blue-600 hover:text-blue-800 flex items-center">
                   Learn More <ArrowRight className="ml-2 h-4 w-4" />
@@ -39,7 +39,7 @@ const Home = () => {
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Benefits</h2>
                 <p className="text-gray-600 mb-4">
-                  Discover the advantages of partnering with us for your business growth.
+                  Discover the advantages of partnering with us for your business growth. From access to a global network of investors to tailored financial solutions, we provide the tools and resources you need to scale your business. Our partnerships are built on trust, innovation, and a shared vision for success.
                 </p>
                 <Link href="/benefits" className="text-blue-600 hover:text-blue-800 flex items-center">
                   Explore Benefits <ArrowRight className="ml-2 h-4 w-4" />
@@ -50,7 +50,7 @@ const Home = () => {
               <CardContent className="p-6">
                 <h2 className="text-2xl font-semibold mb-4 text-transparent bg-clip-text bg-gradient-to-r from-blue-500 via-green-500 to-purple-500">Success Stories</h2>
                 <p className="text-gray-600 mb-4">
-                  Read about entrepreneurs who have thrived with our support and investment.
+                  Read about entrepreneurs who have thrived with our support and investment. These inspiring stories highlight how our network and resources have helped businesses overcome challenges, achieve milestones, and reach new heights. Join us and become part of our growing community of success stories.
                 </p>
                 <Link href="/success-stories" className="text-blue-600 hover:text-blue-800 flex items-center">
                   View Stories <ArrowRight className="ml-2 h-4 w-4" />
