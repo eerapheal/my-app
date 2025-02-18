@@ -63,7 +63,7 @@ const Home = () => {
       <div className="m-10 flex items-center justify-center">
         <video
           controls
-          className="max-w-[700px] h-[350px] rounded-md shadow-lg"
+          className="min-w-[250px] max-w-[700px] h-[350px] rounded-md shadow-lg"
         >
           <source src="/videos/videoplayback.mp4" type="video/mp4" />
           Your browser does not support the video tag.
